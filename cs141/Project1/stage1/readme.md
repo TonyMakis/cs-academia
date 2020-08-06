@@ -28,6 +28,6 @@ Thanks for playing.  Exiting program...
 </pre>
 
 >_The four numbers chosen to be presented to the user should randomly chosen to be one of the following:_<br><br>
-![Number Arrangement Wheels Specifed](nums.png "Title")
+![Number Arrangement Wheels Specifed](nums.png "Title")<br><br>
 >If the user indicates that they *do* want to try again, the program should again randomly choose one of the 6 sets of numbers and display them clockwise starting from the bottom number, such as:
 `The numbers to use are: 3, 9, 4, 1 ...`
