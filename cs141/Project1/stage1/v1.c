@@ -18,7 +18,12 @@ struct NumWheel
    int bottom, left, top, right;
 };  
 
+void clearScrn() {
+    printf("\e[1;1H\e[2J");
+}
+
 void printGameEntryInfo() {
+    clearScrn();
     printf("Author: Anthony Makis\n");
     printf("Program: #1, TwentyFour\n");
     printf("\n");
@@ -28,10 +33,7 @@ void printGameEntryInfo() {
     printf("\n");
 }
 
-int rando(int lower, int upper) {
-    return ( rand() % (upper - lower + 1) ) + lower;
-}
-
+// This function is UNUSED in the program, but nice to visualize all the wheels
 void printNumberWheels(struct NumWheel wheels[]) {
     int i = 0;
 
@@ -53,13 +55,20 @@ void printNumberWheels(struct NumWheel wheels[]) {
     printf("\n");
 }
 
+// => @return: a random number between @lower and @upper
+int rando(int lower, int upper) {
+    return ( rand() % (upper - lower + 1) ) + lower;
+}
+
 // Ask user for 3 operators choice, and set them in params:
-// => @op1, @op2, @op3
+// => @params: op1, op2, op3 -> 3 empty operators to fill from user input
 void promptForOperators(char *op1, char *op2, char *op3) {
     printf("\nEnter the three operators to be used (+,-,*, or /): ");
     scanf(" %c %c %c", op1, op2, op3);
 }
 
+// Given an operator, a float and an int, perform desired operation;
+// => @return: the value calculated, and error check for bad operators
 float performSingleOp(float first, char op, int second) {
     float retValue = 0.0;
     if(op == '+') {
@@ -71,11 +80,15 @@ float performSingleOp(float first, char op, int second) {
     } else if(op == '/'){
         retValue = first / second;
     } else {
-        retValue = -1;
+        fprintf(stderr, "\t\t\t\tFound bad operator: ^ %c\n\nExiting program . . .\n", op);
+        exit(EXIT_FAILURE);
     }
     return retValue;
 }
 
+// A wrapper to facilitate the overall solution of user operations,
+// printing out intermediate steps
+// => @return: the final value as a result of the 3 operations on the number wheel
 float performAllOps(struct NumWheel nw, char op1, char op2, char op3) {
     float currentValue = 0.0;
     currentValue = performSingleOp(nw.bottom * 1.0, op1, nw.left);
@@ -91,6 +104,7 @@ float performAllOps(struct NumWheel nw, char op1, char op2, char op3) {
     return newValue;
 }
 
+// Check if user was able to solve the number wheel
 void printResult(float result) {
     if(result == 24.0) {
         printf("\nWell done, genius!\n");
@@ -99,6 +113,9 @@ void printResult(float result) {
     }
 }
 
+// Ask if user would like to play again
+// @param: runAgain -> a variable for stopping/continuing the while loop
+//                     a 0 => done, a 1 => wants to play again
 void checkToRunAgain(int *runAgain) {
     char decision;
     printf("\nWould you like to play again (Y/y or N/n): ");
@@ -108,11 +125,12 @@ void checkToRunAgain(int *runAgain) {
         printf("\nThanks for playing.  Exiting program...\n");
     } else {
         *runAgain = 1;
-        printf("\e[1;1H\e[2J");
+        clearScrn();
     }
 }
  
 int main() {
+    // Setup given number wheels; 6 distinct wheels possible
     struct NumWheel nw1 = {8, 5, 8, 1};
     struct NumWheel nw2 = {6, 1, 5 ,1};
     struct NumWheel nw3 = {2, 8, 7, 8};
@@ -120,32 +138,38 @@ int main() {
     struct NumWheel nw5 = {5, 2, 9, 2};
     struct NumWheel nw6 = {2, 6, 8, 4};
 
+    // Array to hold all the wheels
     struct NumWheel wheels[6] = {nw1, nw2, nw3, nw4, nw5, nw6}; 
 
+    // Keep track of user's desire to play a.k.a. run the game loop
     int runAgain = 0;
 
     do {
-        // Seed random generator used in @rando by sys. time =>
+        // Seed random generator used in @rando by system time for better random effect =>
         srand(time(0)); 
 
-        // Use random generator to get an index of a wheel in @wheels;
-        // There are only 6 wheels, so 0-5 are indeces => can make it
-        // more dynamic if we get length of @wheels and use that.
+        /* Use random generator to get an index of a wheel in @wheels;
+         * There are only 6 wheels, so 0-5 are indeces 
+         * => TODO: make it more dynamic so it runs independent
+         *          of length of @wheels => take @wheels' length
+        */
         int randWheel = rando(0,5);
 
         printGameEntryInfo();
         printf("The numbers to use are: %d, %d, %d, %d\n", wheels[randWheel].bottom,
-                                                        wheels[randWheel].left,
-                                                        wheels[randWheel].top,
-                                                        wheels[randWheel].right);
+                                                           wheels[randWheel].left,
+                                                           wheels[randWheel].top,
+                                                           wheels[randWheel].right);
+
         char op1, op2, op3; 
         promptForOperators(&op1, &op2, &op3);
+        
         float endResult = performAllOps(wheels[randWheel], op1, op2, op3);
         printResult(endResult);
 
         checkToRunAgain(&runAgain);
 
-        //Uncomment to see available number wheels to play:
+        // Uncomment the following line if you would like to see the wheels, printed out:
         // printNumberWheels(wheels);
     } while(runAgain);
 }
