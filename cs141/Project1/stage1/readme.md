@@ -7,7 +7,6 @@ running this first stage should look like the following, where user input is sho
 <pre>
 Author: Anthony Makis
 Program: #1, TwentyFour
-Aug 22, 2016
 
 Welcome to the game of TwentyFour.  Using each of the four numbers shown
 below exactly once, combining them somehow with the basic mathematical
