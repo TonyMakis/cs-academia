@@ -30,7 +30,7 @@ Thanks for playing.  Exiting program...
 >If the user indicates that they *do* want to try again, the program should again randomly choose one of the 6 sets of numbers and display them clockwise starting from the bottom number, such as:
 `The numbers to use are: 3, 9, 4, 1 ...`
 
-## My Solution in Action:
+## My Solution in Action
 
 ![Stage 1 In Action!](./runningStage1.gif)
 
