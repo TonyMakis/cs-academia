@@ -1,4 +1,4 @@
-# Stage 1 (20 points)
+# Stage 1
 
 The first stage allows users to solve a single puzzle;
 running this first stage should look like the following, where user input is shown in **bold**:
