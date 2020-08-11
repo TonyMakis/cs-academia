@@ -125,14 +125,6 @@ float performAllOps(char op1, char op2, char op3, int d1, int d2, int d3, int d4
     return finalValue;
 }
 
-// THIS FUNCTION EXPOSES A POTENTIAL BUG IN THE PROGRAM WRITEUP => 
-//  . . . MORE ON THIS IN PROJECT 1 README >> ../readme.md
-// int isInteger(float val)
-// {
-//     int truncated = (int)val;
-//     return (val == truncated);
-// }
-
 void printSolutions(int chosenSolution,
                         char *opChoice1, char *opChoice2, char *opChoice3,
                         int *dChoice1, int*dChoice2, int *dChoice3, int *dChoice4) {

@@ -1,5 +1,4 @@
-
-# Stage 2 (35 points)
+# Stage 2
 
 The second stage (building on the first) generates all 3,185 possible solutions to TwentyFour, the game, and then chooses one at random, which gets presented to the user.
 
@@ -64,6 +63,15 @@ Thanks for playing.  Exiting program...
 When debug mode is off, output will look as it did in stage 1 (Sans the `Debug Display`).
 
 >Additional Features Required:
+>
 > - Error checking for length of input, allowing the user to retry
 > - Error checking for invalid input characters, allowing the user to retry
 >   - _Should display appropriate warnings to the user in either case_
+
+## My Solution in Action
+
+![Stage 2 In Action!](./runningStage2.gif)
+
+> I have a `Makefile` for quicker compilation, and then we run the executable (v2). `Makefile` is written to support general compilation of most `.c` files, so I will reuse it throughout projects, making updates to it ocassionally.
+>
+>This was run with `debug mode` set to `TRUE`, which of course prints all the solutions; if you were to set that to `FALSE`, it would switch control flow to the Stage 1 version of the game. To reiterate, when in `debug mode`, we will choose a random solution to show the user. Otherwise, it will choose a number wheel (Stage 1).
