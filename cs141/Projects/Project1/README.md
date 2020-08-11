@@ -1,4 +1,4 @@
-# Project 1
+# Project 1: TwentyFour
 
 This is the first project in the course; it is a simplified version of the game Twenty-Four, which prompts a user with a 4-digit number puzzle (sometimes called [wheels](https://en.wikipedia.org/wiki/24_Game#24%C2%AE_Game), as the real game utilizes a card to show the digits in a circular formation).
 
