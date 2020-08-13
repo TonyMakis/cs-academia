@@ -71,7 +71,7 @@ void extractNextWordFromLine(
 
 int main()
 {
-    char fileName[] = "words.txt";  // Make a C string (array of char) to store filename
+    char fileName[] = "20000LeaguesUnderTheSeaJulesVerne.txt";  // Make a C string (array of char) to store filename
     FILE *pInputFile;               // file pointer
     char inputLine[ MAX_LENGTH];    // An input line with some number of words on it
     int i=0;                        // Current index position in inputLine
