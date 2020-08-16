@@ -13,8 +13,8 @@ We will explore the similarities between the Swedish product names and English w
 This is a four-phase development; the stages each have their own writeups, and should be programmed in order. There are three files being provided to us:
 
 - binarySearch.c => basic implementation of a binary search
-- IKEAwords.txt => A bunch of IKEA products (1,764) as strings (Swedish, with all characters as letters in American English)
-- dictionary.txt => An English dictionary of 40,444 words (longest word is 21 chars.)
+- inventory_ikea.txt => A bunch of IKEA products (1,764) as strings (Swedish, with all characters as letters in American English)
+- dictionary.txt => An English dictionary of 40,437 words (longest word is 21 chars.)
 
 ## Restrictions for this Project
 
