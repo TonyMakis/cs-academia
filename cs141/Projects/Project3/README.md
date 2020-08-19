@@ -16,6 +16,8 @@ This is a four-phase development; the stages each have their own writeups, and s
 - inventory_ikea.txt => A bunch of IKEA products (1,764) as strings (Swedish, with all characters as letters in American English)
 - dictionary.txt => An English dictionary of 40,437 words (longest word is 21 chars.)
 
+>Stage 4 is actually **optional** => bonus stage for those interested
+
 ## Restrictions for this Project
 
 We were asked to utilize binarySearch for certain search operatoins; other than this there weren't any extra requirements :) (This seems like a good idea, since the strings are sorted alphabetically in each file, so we can keep splitting the dataset in half and searching for a string in O(log(n)) time complexity).

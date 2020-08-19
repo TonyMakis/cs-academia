@@ -1,29 +1,19 @@
-# Stage 3
+# Stage 4
 
-As humans we can look at a word and ignore or substitute characters. In addition to your output from stage 2, now get your program to try to match each word in input.txt with all IKEA product names, where the match could now be up to 1 character different. 
+Extend stage 3 so that it does the same thing, but instead of deleting, substituting or inserting just a single character, do it for up to 3 characters. (You don't need to do the substring search for each of those.) This should be in addition to your output for stage 3:
 
-If the letters in a word match exactly (except for the upper/lower case difference), then it should be capitalized and printed out without any further changes as normal. If a word doesn't match exactly however, then possible character changes should be handled in the order shown below:
+>Because this can take an incredibly long time for longer words, do this incrementally:
 
->Once an IKEA match is found, the matching word should be printed out in all upper-case and no further work should be done with that word. In other words, if a match is found when deleting a character, then you would not try the subsequent steps of substituting or inserting a character, or checking for a substring.
+1. Note that if the original word matches you will not do any of this work and the word will be printed out in all capital letters. You should have already checked delete/substitute/insert for one character in the previous stage.  If the word matched at any of those points, it would be printed out in all capital letters and you are done with it.
 
-1. **Delete** a character
-    - . E.g. The word "round" with the 'o' deleted matches IKEA word RUND.  If your input file had the word "round" in it, then your program would instead display RUND.
+2. If so far for a word there was no match, next do delete/substitute/insert (in that order) for **two** characters.  If a word matches print it out in all capital letters and you are done with that word.  
 
-2. **Substitute** a character
-    - . E.g. The word "call" with the 'c' changed to a 'j' matches IKEA word JALL.  If your input file had the word "call" in it, then your program would instead display JALL.
-
-3. **Insert** a new character
-    - . E.g. The word "bags" plus an extra 'I' matches IKEA word BAGIS.  If your input file had the word "bags" in it, then your program would instead display BAGIS.
-
-4. Match a **substring**
-    - . E.g. The word "back" is a substring of the IKEA word BADBACK.  If your input file had the word "back" in it, then your program would instead display BADBACK.
-
-5. If a word doesn't match in any of the above cases, again just print out the unchanged word, as you did in the previous stage of the program.
-
->You do not need worry about puncutation correctness when printing the similar Ikea words
+3. If you *still* don't have a match, lastly try delete/substitute/insert this time for **three** characters, printing it out in all capital letters if you find a match.  
 
 ## My Solution in Action
 
-![Stage 3 In Action!](./runningStage3.png)
-
-> I have a `Makefile` for quicker compilation, and then we run the executable (v1). `Makefile` is written to support general compilation of most `.c` files, so I will reuse it throughout projects, making updates to it ocassionally.
+__**TODO:**__
+>This stage is still incomplete => it is still just stage 3. This is the bonus stage, and at the time I decided against completing it. Aside from other things to work on, I felt that the writeup is a little vague.
+>
+>Checking for two characters for instance could mean that we check for say removing two characters in a row and checking if the that subsequent word is a match, but should we be proceeding to check the removal of every set of two characters *possible* in the word, or simply a check a pair of characters sequentially, iterating through the word once?
+>
