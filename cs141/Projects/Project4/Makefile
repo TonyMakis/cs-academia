@@ -2,14 +2,15 @@
 # make        # compile all binary
 # make clean  # remove ALL binaries and objects
 
-.PHONY = all clean
+.PHONY = all debug clean
 
-CC = gcc                        # compiler to use
+CC = g++                        # compiler to use
 
 LINKERFLAG = -lm
+DEBUGFLAG = -g
 
-SRCS := $(wildcard *.c)
-BINS := $(SRCS:%.c=%)
+SRCS := $(wildcard *.cpp)
+BINS := $(SRCS:%.cpp=%)
 
 all: ${BINS}
 

@@ -8,7 +8,7 @@ Write a program to play the game of DoubleDown, a cousin of Tic-Tac-Toe and Quar
 
 1. Display the blank board, square numbers and pieces to play, which should look like I have shown in the output section below.
 
-2. Board                          |  Pieces
+2.  Board                          |  Pieces
     :-----------------------------:|:-----------------------------:
     Your board should be declared  |Your pieces should likewise be
     as an array of 16 characters   |stored in an array.
@@ -259,4 +259,4 @@ You may not use any C++ features besides these, or risk point penalty.
 
 ![Project 4 in Action!](./runningProject4.gif)
 
-> I have a `Makefile` for quicker compilation, and then we run the executable (v1). `Makefile` is written to support general compilation of most `.c` files, so I will reuse it throughout projects, making updates to it ocassionally.
+> I have a `Makefile` for quicker compilation, and then we run the executable (v1). `Makefile` is written to support general compilation of most `.cpp` files, so I will reuse it throughout projects, making updates to it ocassionally.
