@@ -14,7 +14,7 @@ For just this extra credit you may use classes & objects in C++, though those ar
 
 If you would like to see the code in action, this folder DoubleDown contains all the necessary files to put together the Windows Desktop Application Code Solution on MS Visual Studio, which I used to program it (or anything else you would like to use). I made the decision to use VS Code b/c the SDK I used to build the GUI is wxWidgets (following a bit of [this](https://www.youtube.com/watch?v=FOIbK4bJKS8&ab_channel=javidx9) tutorial I found online).
 
-In any event, I have made the final executable / deliverable availabel here. Be weary, as it is of course an unsigned application certification-wise, and will ask you to `allow running` of the application, full-fledged Windows Warning Style.
+In any event, I have made the final executable / deliverable available here. Be weary, as it is of course an unsigned application certification-wise, and will ask you to `allow running` of the application, full-fledged Windows Warning Style.
 
 ### The GUI
 
