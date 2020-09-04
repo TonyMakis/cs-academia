@@ -253,7 +253,7 @@ At this point in the semester your program should be divided into functions, wit
 
 You may not use any C++ features besides these, or risk point penalty.
 
->There is a GUI I created for bonus points in the [Bonus Stage](./DoubleDown/README.md), in the DoubleDown folder in this directory.
+>There is a GUI I created for bonus points in the [Bonus Stage](./DoubleDown), in the DoubleDown folder in this directory.
 
 ## My Solution in Action
 
