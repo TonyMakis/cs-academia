@@ -241,7 +241,7 @@ Resetting the level to level 1.
 This is to be developed in one stage, procedurally. There aren't any files being provided to us, but I will have two files, one for the text-based game, and one for the extra credit GUI:
 
 - doubleDown.c => Text-based version of the game
-- doubleDownGUI.c => Graphics based version of the game
+- DoubleDown Folder => Graphics based version of the game, look to it's README in there
 
 ### Restrictions for this Project
 
@@ -253,10 +253,12 @@ At this point in the semester your program should be divided into functions, wit
 
 You may not use any C++ features besides these, or risk point penalty.
 
->There is an **optional** portion to this project => bonus stage for those interested. Find some graphics package that works with your computer. Make the program graphical so that to make a move you click once on a piece to select it, then click a second time on a board destination to place the piece there. For just this extra credit you may use classes & objects in C++, though those are beyond the scope of this course.
+>There is a GUI I created for bonus points in the [Bonus Stage](./DoubleDown/README.md), in the DoubleDown folder in this directory.
 
 ## My Solution in Action
 
-![Project 4 in Action!](./runningProject4.gif)
+### The Text-based Game
+
+![Project 4 in Action!](./runningProject4TextBased.gif)
 
 > I have a `Makefile` for quicker compilation, and then we run the executable (v1). `Makefile` is written to support general compilation of most `.cpp` files, so I will reuse it throughout projects, making updates to it ocassionally.
