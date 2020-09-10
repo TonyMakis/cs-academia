@@ -79,10 +79,14 @@ void printGameBoard(const int seconds, const char board[][4], const int gameScor
     cout << moveNum << ". Enter a word: ";
 }
 
-void printWordsFound(bool foundWords[], const string* dict, int numWords) {
+void printWordsFound(bool foundWords[], int wordLengths[], const string* dict, int numWords) {
     cout << "Words so far are: ";
-    for(int i = 0; i < numWords; i++) {
-        if(foundWords[i]) cout << dict[i] << " ";
+    for(int len = 3; len < 16 + 1; len++) { // For all possible lengths . . .
+        for(int word = 0; word < numWords; word++) { // For all the words in dict . . .
+            if(wordLengths[word] == len && foundWords[word]) { // If the word is this length and was found . . .
+                cout << dict[word] << " ";
+            }
+        }
     }
     cout << endl;
 }
@@ -226,8 +230,8 @@ void incrementScore(int* score, string entry) {
     cout << "   Worth " << points << " points." << endl;
 }
 
-void evaluateEntry(char board[][4], string entry, const string* dict, 
-                   bool foundWords[], int numWords, int* moveNum, int* score) {
+void evaluateEntry(char board[][4], string entry, int wordLengths[], bool foundWords[], 
+                   const string* dict, int numWords, int* moveNum, int* score) {
     int entryDictIndex = binarySearch(entry, dict, numWords);
     // Check if word is valid English (in the dictionary)
     if(entryDictIndex > -1) {
@@ -239,7 +243,7 @@ void evaluateEntry(char board[][4], string entry, const string* dict,
                 incrementScore(score, entry);
                 (*moveNum)++;
             } else cout << "Sorry, that word was already previously found." << endl;
-            printWordsFound(foundWords, dict, numWords);
+            printWordsFound(foundWords, wordLengths, dict, numWords);
         } else cout << " cannot be formed on this board." << endl;
     } else cout << " was not found in the dictionary." << endl;
 }
@@ -302,9 +306,8 @@ int main() {
             continue;
         }
         else if(gameEntry.compare("x") == 0) break;             // exit game
-        else evaluateEntry(board, gameEntry, dictionary,        // check the word and update board
-                           wordsAlreadyEntered, numDictWords, 
-                           &moveNum, &gameScore);
+        else evaluateEntry(board, gameEntry, wordLengths,       // check the word and update board
+                           wordsAlreadyEntered, dictionary, numDictWords, &moveNum, &gameScore);
         // Get Next Time Stamp, and use Start Time Stamp to get Elapsed Seconds
         if(stillTiming) {
             now = getTimeStampInSeconds() - now;
