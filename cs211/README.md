@@ -8,4 +8,6 @@ Software development tools and practices; debugging and testing; advanced langua
 
 Grade of C or better in CS 141
 
-#### Earned: 2 credit hours
+## Credits Earned
+
+>2 credit hours; earned during the Spring 2017 semester
