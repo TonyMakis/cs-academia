@@ -17,10 +17,8 @@ const int BoardSize=5;
 void displayIdentifyingInformation()
 {
     printf("\n");
-    printf("Author: Dale Reed          \n");
+    printf("Author: Anthony Makis      \n");
     printf("Program: #6, Coin Swap     \n");
-    printf("TA: Claude Shannon, Th 4-5 \n");
-    printf("Nov 17, 2016               \n");
     printf("\n");
 }//end displayIdentifyingInformation()
 
