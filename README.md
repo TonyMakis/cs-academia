@@ -1,15 +1,16 @@
 <img
-    align="left"
+    align="right"
     src="uicLogo.png"
     alt="UIC COE Logo"
     width="250"
 />
 
-# UIC Computer Science & Mathematics
+# B.S. in Computer Science
+### Minor in Mathematics
 
 ## Courses Curriculum
 
-This is a comprehensive repository intended to document the homework and projects (and potentially labs) I have completed as a student of the College of Engineering at the University of Illinois at Chicago; this is where I ultimately completed my Bachelor's Degree in Computer Science with a Minor in Mathematics.
+This is a comprehensive repository intended to document the homework and projects (and potentially labs) I have completed as a student of the College of Engineering at the University of Illinois at Chicago; this is where I ultimately completed my Bachelor of Science Degree in Computer Science with a Minor in Mathematics.
 
 ## Repo Structure
 
