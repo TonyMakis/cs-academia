@@ -5,8 +5,7 @@
     width="250"
 />
 
-# B.S. in Computer Science
-### Minor in Mathematics
+# Academia Overview
 
 ## Courses Curriculum
 
