@@ -1,5 +1,5 @@
 <img
-    align="right"
+    align="left"
     src="uicLogo.png"
     alt="UIC COE Logo"
     width="250"
