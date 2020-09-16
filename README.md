@@ -2,7 +2,7 @@
     align="right"
     src="uicLogo.png"
     alt="UIC COE Logo"
-    width="350"
+    width="250"
 />
 
 # UIC Computer Science & Mathematics
