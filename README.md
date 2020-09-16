@@ -10,3 +10,8 @@ It is hopefully quite intuitive to click through; simply open the course folder,
 
 >This is a work in progress; I am iterating through my work in its entirety and aim to describe and demonstrate the work in a tasteful manner.
 
+<img
+    src="uicLogo.png"
+    alt="UIC COE Logo"
+    style="display:block;width:40%;margin-left:auto;margin-right:auto;margin-top:4rem;"
+/>
