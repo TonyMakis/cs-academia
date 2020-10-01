@@ -76,6 +76,13 @@ To help test your program, the use of redirection of standard input from a text 
 
 >**Note that the code inside of your program will still read from standard input**. Redirection is information given to the Operating System at the command prompt. The Operating Systemthen “redirects” a standard input read operation away from the keyboard and to the specified file while the program is running.
 
+## Project Structure
+
+This is to be developed in one stage, procedurally. There are 2 files being provided to us:
+
+- proj1data1.txt => first sample file of numbers to try with the program
+- proj1data2.txt => second sample file of numbers to try with the program
+
 ## Restrictions for this Project
 
 Must use dynamic allocation to store input => do not assume size via hardcoding integer sizes.
