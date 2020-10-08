@@ -18,8 +18,8 @@ The __push__ operation is defined as follows:
 ```psuedocode
 if (the stack array if full)
   grow the array
-  add the value to the stack array
-  increment the top-of-stack value
+add the value to the stack array
+increment the top-of-stack value
 ```
 
 The __grow__ operation is defined as follows:
@@ -34,7 +34,7 @@ Update the maximum stack size variable
 
 ### Stack Usage Algorithm
 
-To check for balance symbols in an expression, the expression is inspected from left to rightafter the entire line is read in.
+To check for balance symbols in an expression, the expression is inspected from left to right after the entire line is read in.
 
 When an opening symbol is encountered, this symbol is pushed onto the stack. The opening symbols are: ( { [ and <.
 
@@ -49,7 +49,7 @@ When the end of the expression is encountered (i.e. the end of the input line), 
 - If the stack is empty, then the expression was balanced
 - If the stack is **NOT** empty, the expression was not balanced and there is a missing closing symbol
 
-Since the only input we really care about are the 8 characters that form the 4 symbol pairsand determining when the “end of the expression” is reached, any other input on the line can be ignored.
+Since the only input we really care about are the 8 characters that form the 4 symbol pairs and determining when the “end of the expression” is reached, any other input on the line can be ignored.
 
 ### Use of C struct and C functions
 
@@ -59,7 +59,8 @@ When writing your code, you **MUST** place all of the data items needed for the 
 - the integer variable specifying the current size of the dynamic array
 - the integer variable specifying the top of the stack
 
-The instance of this struct **MUST** be declared locally in `main()`. It may **NOT** be global. (Note: If you want it to be declared locally in some other function other than `main()`, that is also OK.)
+The instance of this struct **MUST** be declared locally in `main()`. It may **NOT** be global.
+>Note: If you want it to be declared locally in some other function other than `main()`, that is also OK.
 
 You **MUST** write functions for:
 
@@ -76,7 +77,7 @@ All of these functions **MUST** take __as their first parameter__ a pointer to t
 
 Your program is to be able to take one optional command line argument, the -d flag. When this flag is given, your program is to run in "debug" mode. When in this mode, your program is to display a message whenever an item is pushed or popped from the stack.  This message must include the character being pushed or popped. Also, when the stack grows, you are to explicitly state the old and new size of the dynamic array as well as indicate the number of values copies from the current to the new dynamic array.
 
-When the flag is not given, this debugging information should notbe displayed. One simple way to set up a "debugging" mode is to use a boolean variable which is set to true when debugging mode is turned on but false otherwise. This debugging mode variable can be set up as a global variable if desired. Then using a simple if statement controls whether information should be output or not.
+When the flag is not given, this debugging information should not be displayed. One simple way to set up a "debugging" mode is to use a boolean variable which is set to true when debugging mode is turned on but false otherwise. This debugging mode variable can be set up as a global variable if desired. Then using a simple if statement controls whether information should be output or not.
 
 ```C
   if ( debugMode == TRUE )
@@ -87,9 +88,9 @@ When the flag is not given, this debugging information should notbe displayed. O
 
 The input for this program will come from standard input. Each line of input will be a single expression that is to be checked for balanced symbols. You may assume that each line of input is less than `300` characters long.
 
-Since we have limited the length of the input and are trying to process one line of input at a time, the best way to read the input is the `fgets()` function in the `<stdio.h>` library. Since we are reading from standard input, you are to use the value of stdinfor the third parameter of `fgets()`. This causes `fgets()` to read input from the standard input. You **MUST** use `fgets()` for this programming project to read in the input.
+Since we have limited the length of the input and are trying to process one line of input at a time, the best way to read the input is the `fgets()` function in the `<stdio.h>` library. Since we are reading from standard input, you are to use the value of stdin for the third parameter of `fgets()`. This causes `fgets()` to read input from the standard input. You **MUST** use `fgets()` for this programming project to read in the input.
 
-If the input on the line containsonlythe letter `q` or `Q`, quit the program.
+If the input on the line contains only the letter `q` or `Q`, quit the program.
 
 ### Output
 
@@ -118,17 +119,14 @@ Expression is balanced
 
 ## Project Structure
 
-This is to be developed in one stage, procedurally. There are 2 files being provided to us:
-
-- proj1data1.txt => first sample file of numbers to try with the program
-- proj1data2.txt => second sample file of numbers to try with the program
+>No extra resources provided.
 
 ## Restrictions for this Project
 
-This program will require the use of a stack implemented in a dynamic array. This dynamic array is to grow to a larger size when a push operation would be done to a full array causing an array overflow. For this program, your dynamic array **MUST** start with 2 positions in the array. When the array needs to grow, it size **MUST** grow by 2 additional positions each time (note the array to grow in size from 2 to 4 to 6 to 8 to 10 to ...).
+This program will require the use of a stack implemented in a dynamic array. This dynamic array is to grow to a larger size when a push operation would be done to a full array causing an array overflow. For this program, your dynamic array **MUST** start with 2 positions in the array. When the array needs to grow, it size **MUST** grow by 2 additional positions each time (note the array to grow in size from `2` to `4` to `6` to `8` to `10` to ...).
 
 ## My Solution in Action
 
-![Project 1 in Action!](./runningProject1.gif)
+![Project 2 in Action!](./runningProject2.gif)
 
 > I have a `Makefile` for quicker compilation, and then we run the executable (v1). `Makefile` is written to support general compilation of most `.c` files, so I will reuse it throughout projects, making updates to it ocassionally.
