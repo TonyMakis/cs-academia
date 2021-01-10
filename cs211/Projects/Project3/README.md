@@ -42,9 +42,9 @@ size: 10, 20; start: 1, 1; end: 10, 20
 **********************
 ```
 
->The blocked positions and the edges of the above maze are filled in with *'s. The start position is filled in with an's'. The end position in filled in with an 'e'. The other positions are filled in with periods. The maze is a 2D-array
+>The blocked positions and the edges of the above maze are filled in with *'s. The start position is filled in with an 's'. The end position in filled in with an 'e'. The other positions are filled in with periods. The maze is a 2D-array
 
-The algorithm you are to use to find a path through the maze is a _Depth First Search_ (DFS). You __MUST__ use the following form of a Depth First Search, ane employ the Stack you made previously in Project 2:
+The algorithm you are to use to find a path through the maze is a _Depth First Search_ (DFS). You __MUST__ use the following form of a Depth First Search, employing the Stack you made previously in Project 2:
 
 - Mark all unblocked positions in the maze as __UNVISITED__
 - Push the start position's coordinates on the stack
@@ -159,7 +159,10 @@ Once the maze solving algorithm is run, you must then print out a message statin
 
 ## Project Structure
 
-struct
+This is to be developed in one stage, procedurally. There are 5 files being provided to us:
+
+- maze.c => starter code to help prioritize implmentation
+- mazeData`N`.txt => where `N` is any number in `{1,2,3,4}`; there are four different maze input files to try out with the program!
 
 ## Restrictions for this Project
 
