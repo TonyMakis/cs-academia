@@ -170,7 +170,7 @@ Your DFS algorithm __may not__ use recursion; follow the guidelines of the implm
 
 ### Using the Starter Code (maze.c)
 
-The `maze.c` program uses a static sized 2-D array; however, your program __MUST__ use a dynamic 2-D array sized to reflect the maze size given in the input file. You must alsodynamically deallocate this array at the end of your program. The `maze.c` program also does not do any error checking for invalid input, your program __MUST__ check for invalid input.
+The `maze.c` program uses a static sized 2-D array; however, your program __MUST__ use a dynamic 2-D array sized to reflect the maze size given in the input file. You must also dynamically deallocate this array at the end of your program. The `maze.c` program also does not do any error checking for invalid input, your program __MUST__ check for invalid input.
 
 ### More on Stack Implementation
 
