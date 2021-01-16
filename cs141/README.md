@@ -13,3 +13,7 @@ Grade of C or better in CS 109 or 111
 ## Credits Earned
 
 >3 credit hours; earned during the Fall 2016 semester
+
+## Projects Completed
+
+[Projects for cs141](./Projects)
