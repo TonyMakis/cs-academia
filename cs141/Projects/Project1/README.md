@@ -5,7 +5,7 @@ This is the first project in the course; it is a simplified version of the game 
 > The user will need to enter 3 valid operators (*only these:* `+ - * /`) that when applied to the numbers in the puzzle, produce the number 24 when operating from left-to-right => **ignoring order of opertions!**
 > e.g. Given `3 3 2 6` as a puzzle, one could say: `+ - *`, b/c:
 >
-> - `3 + 3 - 2 * 6 = 24` => **again, ignore oreder of ops.**
+> - `3 + 3 - 2 * 6 = 24` => **again, ignore order of ops.**
 >
 
 ## Project Structure
