@@ -23,3 +23,10 @@ This is a four-phase development; the stages each have their own writeups, and s
 We were asked to utilize binarySearch for certain search operatoins; other than this there weren't any extra requirements :) (This seems like a good idea, since the strings are sorted alphabetically in each file, so we can keep splitting the dataset in half and searching for a string in O(log(n)) time complexity).
 
 Any further, atomic requirements are described in the different Stages!
+
+## Stages
+
+[Stage 1](./Stage1)
+[Stage 2](./Stage2)
+[Stage 3](./Stage3)
+[Stage 4](./Stage4)
