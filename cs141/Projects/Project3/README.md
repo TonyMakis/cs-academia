@@ -26,7 +26,7 @@ Any further, atomic requirements are described in the different Stages!
 
 ## Stages
 
-[Stage 1](./Stage1)
-[Stage 2](./Stage2)
-[Stage 3](./Stage3)
-[Stage 4](./Stage4)
+- [Stage 1](./Stage1)
+- [Stage 2](./Stage2)
+- [Stage 3](./Stage3)
+- [Stage 4](./Stage4)
