@@ -18,6 +18,7 @@ It is hopefully quite intuitive to click through; simply open the course folder,
 >This is a work in progress; I am iterating through my existing schoolwork (collected untidily for `4 years`) in its entirety, and aim to describe/demonstrate these works in a tasteful manner.
 >Note: I directly avoid mentioning my university, save in the image above, to avoid my repo being too readily indexable for the web. This way, my code is more difficult to find for anyone trying to plagiarise.
 
-# Coursework Directory
+## Coursework Directory
 
 - [cs141](./cs141)
+- [cs211](./cs211)
