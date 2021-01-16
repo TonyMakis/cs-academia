@@ -16,4 +16,9 @@ Grade of C or better in CS 109 or 111
 
 ## Projects Completed
 
-[Projects for cs141](./Projects)
+- [Projects 1](./Projects/Project1)
+- [Projects 2](./Projects/Project2)
+- [Projects 3](./Projects/Project3)
+- [Projects 4](./Projects/Project4)
+- [Projects 5](./Projects/Project5)
+- [Projects 6](./Projects/Project6)
