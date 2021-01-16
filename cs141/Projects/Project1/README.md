@@ -17,3 +17,8 @@ This is a two-phase development; the first and second stages each have their own
 We were *not* allowed to utilize _arrays_ for this project (originally). After some discussion, this requirement was modified to allow us statically defined arrays with size __no greater than 10 elements__ (Not allowed to allocate memory dynamically).
 
 Any further, atomic requirements are described in the different Stages!
+
+## Stages
+
+- [Stage 1](./Stage1)
+- [Stage 2](./Stage2)
