@@ -16,9 +16,9 @@ Grade of C or better in CS 109 or 111
 
 ## Projects Completed
 
-- [Projects 1](./Projects/Project1)
-- [Projects 2](./Projects/Project2)
-- [Projects 3](./Projects/Project3)
-- [Projects 4](./Projects/Project4)
-- [Projects 5](./Projects/Project5)
-- [Projects 6](./Projects/Project6)
+- [Project 1](./Projects/Project1)
+- [Project 2](./Projects/Project2)
+- [Project 3](./Projects/Project3)
+- [Project 4](./Projects/Project4)
+- [Project 5](./Projects/Project5)
+- [Project 6](./Projects/Project6)
