@@ -64,7 +64,7 @@ The third source code file is to have the code that you are writing that will pe
 - `displayGroupSizeAhead()`
 - `displayListInformation()`
 
-You must also create a header file. The job of the header file is to contain the information so the source code files can talk to each other. The header file (`.h` file) should contain the function prototypes and any struct and/or typedef statements. Please review the `.h` file in the example below.
+You must also create a header file. The job of the header file is to contain the information so the source code files can talk to each other. The header file (`.h` file) should contain the function prototypes and any struct and/or typedef statements. Please review the `.h` file in the example.
 
 The makefile __MUST__ seperately compile each source code file into a `.o` file and separately link the `.o` files together into an executable file. Review the makefile in the example below to see how this is done. The command to create the `.o` file is:
 

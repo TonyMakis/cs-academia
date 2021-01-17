@@ -162,7 +162,7 @@ Once the maze solving algorithm is run, you must then print out a message statin
 This is to be developed in one stage, procedurally. There are 5 files being provided to us:
 
 - maze.c => starter code to help prioritize implmentation
-- mazeData`N`.txt => where `N` is any number in `{1,2,3,4}`; there are four different maze input files to try out with the program!
+- data/mazeData`N`.txt => where `N` is any number in `{1,2,3,4}`; there are four different maze input files to try out with the program!
 
 ## Restrictions for this Project
 

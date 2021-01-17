@@ -55,11 +55,11 @@ if ( debugMode == TRUE )
 This is to be developed in one stage, procedurally. There are 5 files being provided to us:
 
 - `proj4Base.c` => starter code provided for user interface
-- `multipleSourceCodeFilesExample` => a directory that details an example of compiling code with multiple source/header files involved
+- [multipleSourceCodeFilesExample](./multipleSourceCodeFilesExample) => a directory that details an example of compiling code with multiple source/header files involved
 
 ## Restrictions for this Project
 
-There are intensive specifications on the nature of file structure as well as queue implementation. Also, it is required to create shared program files for this project, for better cleanliness in code maintenance. This requires a special `Makefile` as well as folder structure, exemplified in the `multipleSourceCodeFilesExample` directory in this project.
+There are intensive specifications on the nature of file structure as well as queue implementation. Also, it is required to create shared program files for this project, for better cleanliness in code maintenance. __This requires a special `Makefile` as well as folder structure, exemplified in the `multipleSourceCodeFilesExample` directory in this project__.
 
 ### Using the Starter Code (proj4Base.c)
 

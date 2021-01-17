@@ -9,4 +9,4 @@ max3b.o: max3b.c max3.h
 
 clean:
 	@echo "Cleaning up..."
-	rm -rvf *.o *.h max3
+	rm -rvf *.o max3
