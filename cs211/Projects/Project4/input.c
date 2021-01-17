@@ -1,5 +1,13 @@
 #include "queue.h"
 
+// Command Format Checking
+int cmdUsageMsg(char *cmd) {
+    fprintf( stderr, "%s\n\tUsage: %s [OPTIONALS]\n\n", KYEL, cmd );
+    fprintf( stderr, "\tOPTIONAL ARGUMENT:\n\n");
+    fprintf( stderr, "\t\t-d, \temit debugging messages\n%s", KNRM);
+    exit(-1);
+}
+
 /* Clear input until next End of Line Character - \n */
 void clearToEoln() {
     int ch;
@@ -130,12 +138,20 @@ void printCommands() {
 }
 
 int main(int argc, char **argv) {
+    boolean debug_mode;
+
+    if(argc == 1)
+        debug_mode = FALSE;
+    else if(argc == 2 && strcmp(argv[1], "-d") == 0)
+        debug_mode = TRUE;
+    else
+        cmdUsageMsg(argv[0]);
 
     char *input;
     int ch;
 
     queue q;
-    initQueue(&q);
+    initQueue(&q, debug_mode);
 
     printf("Starting Restaurant Wait List Program\n\n");
     printf("Enter command: ");

@@ -4,6 +4,14 @@
 #include <string.h>
 #include <ctype.h>
 
+// Added some colors for pretty printing!
+// -> used as %s, injected into print strings
+#define KNRM  "\x1B[0m"
+#define KRED  "\x1B[31m"
+#define KGRN  "\x1B[32m"
+#define KYEL  "\x1B[33m"
+#define KCYN  "\x1B[36m"
+
 // Type/Function/Struct Definitions/Declarations
 
 // Declaration of a boolen type, that can take the values in braces
@@ -25,11 +33,12 @@ typedef struct group {
 // Queue: tracks total number of groups in queue, as well as the leading group
 typedef struct queue {
     int numGroups;
+    boolean debugMode;
     group *front;
     group *tail;
 } queue;
 
-void initQueue(queue *q);
+void initQueue(queue *q, boolean debug_mode);
 void addToList(queue *q, int size, char *name, boolean present);
 boolean doesNameExist(queue *q, char *name);
 boolean updateStatus(queue *q, char *name);
