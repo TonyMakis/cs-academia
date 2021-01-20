@@ -1,6 +1,9 @@
 # Stage 1
 
-![](viewCode.png) [View Code](https://github.com/TonyMakis/cs-academia/tree/master/cs141/Projects/Project1/Stage1)
+[View Code](https://github.com/TonyMakis/cs-academia/tree/master/cs141/Projects/Project1/Stage1)
+
+![](viewCode.png)
+<!-- .element style="border: 0; background: None; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" -->
 
 The first stage allows users to solve a single puzzle;
 running this first stage should look like the following, where user input is shown in **bold**:
