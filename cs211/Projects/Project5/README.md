@@ -154,7 +154,7 @@ if(debugMode == TRUE)
 
 ## Project Structure
 
-This is to be developed in one stage, procedurally. There are 5 files being provided to us:
+This is to be developed in one stage, procedurally. There is one file being provided:
 
 - `Proj5Base.java` => starter code provided for user interface
 
