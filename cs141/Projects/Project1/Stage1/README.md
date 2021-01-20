@@ -2,8 +2,7 @@
 
 [View Code](https://github.com/TonyMakis/cs-academia/tree/master/cs141/Projects/Project1/Stage1)
 
-![](seeCode.png)
-<!-- .element style="width=10%" -->
+<img src="./seeCode.png" width="50" />
 
 The first stage allows users to solve a single puzzle;
 running this first stage should look like the following, where user input is shown in **bold**:
