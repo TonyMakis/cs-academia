@@ -43,7 +43,7 @@ The commands are to follow the descriptions given below.
 
 To determine if a person can travel from airport X to airport Y in one or more flights, a recursive depth-first-search algorithm must be used. For this algorithm to work, we will need to be able to mark each airport as visited. Setting up an `Airport` class is required. This object will contain all of the data that one airport knows (the head of the linked list for the airport’s adjacency list and the object will also contain a `Boolean` value to determine if an airport has been visited or not)and the methods to use that data. The travel network __must__ be a dynamic array of these `Airport` objects. The adjacency list will also need a `Node` class/object to store the linked list information.
 
-The pseudo code for this algorithm is as shown below. Note it is valid to ask, _"can I go from airport X to airport X in one or more flights?"_ It really is asking, _“If I leave airport X, can I return to it?”_ This algorithm is recursive and you __must__ use it.
+The pseudo code for this algorithm is as shown below. Note it is valid to ask, _"Can I go from airport X to airport X in one or more flights?"_ It really is asking, _“If I leave airport X, can I return to it?”_ This algorithm is recursive and you __must__ use it.
 
 ```Java
     void depthFirstSearchHelper(int x, int y) {
@@ -91,9 +91,10 @@ You are responsible to write the code for this linked list yourself. Note that t
 
 ## Project Structure
 
-This is to be developed in one stage, procedurally. There is one file being provided:
+This is to be developed in one stage, procedurally. There is one source file and 5 data files being provided:
 
-- `Proj6Base.java` => starter code provided for user interface
+- Proj6Base.java => starter code provided for user interface
+- data/proj6data`N`.txt => where `N` is any number in {1,2,3,4,5}; there are five different input files to try out with the program!
 
 ## Restrictions for this Project
 
@@ -114,4 +115,4 @@ Your program is to be written using at least two source code files. All of the s
 
 ## My Solution in Action
 
-![Project 6 in Action!](./runningProject6.gif)
+![Project 6 in Action!](img/runningProject6.gif)

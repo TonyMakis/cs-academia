@@ -26,4 +26,4 @@ t 7 2
 t 5 5  
 t 1 6
 # make call to commands in "5th data file"
-f proj6data5.txt
+f data/proj6data5.txt
