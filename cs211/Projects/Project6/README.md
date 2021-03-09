@@ -116,3 +116,7 @@ Your program is to be written using at least two source code files. All of the s
 ## My Solution in Action
 
 ![Project 6 in Action!](img/runningProject6.gif)
+
+## UML Diagram of Project
+
+![UML Diagram](img/Project6UML.png)
