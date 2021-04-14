@@ -26,3 +26,4 @@ The README markdown files in the child directories of this repository are mainly
 
 - [cs141](./cs141)
 - [cs211](./cs211)
+- [cs251](./cs251)
