@@ -66,7 +66,7 @@ class List {
      *	             in O(1) time will be in _other_ functions which affect
      *	             the length of lists.
      *
-     * HINT:         You are free to add data members to the List class...
+     *         HINT: You are free to add data members to the List class...
      *	             maybe for "bookkeeping"??
      */
     int length() const {
@@ -408,8 +408,8 @@ class List {
      *            
      *               BEFORE:               |   AFTER:
      *            -------------------------|--------------------------------------  
-     * 		           a: [2 3 4 9 10 30]    |   a: [2 3 4 5 8 8 9 10 11 20 30 40]
-     * 		           b: [5 8 8 11 20 40]   |   b: []
+     *               a: [2 3 4 9 10 30]    |   a: [2 3 4 5 8 8 9 10 11 20 30 40]
+     *               b: [5 8 8 11 20 40]   |   b: []
      *
      * REQUIREMENTS: Runtime Must be linear in the length of the resulting
      *              merged list (or using variables above, O(a.length() + b.length()).
@@ -498,22 +498,22 @@ class List {
      *            
      *                     BEFORE:         |       AFTER:
      *            -------------------------|-----------------------
-     * 		           a: [2 3 9 7 8]        |         a: [7 8]
-     * 		           k: 3                  |   @return: [2 3 9]
+     *               a: [2 3 9 7 8]        |         a: [7 8]
+     *               k: 3                  |   @return: [2 3 9]
      *
      *		      EX.2) Call a.prefix(0)     
      *              
      *                     BEFORE:         |       AFTER:
      *            -------------------------|-----------------------
-     * 		           a: [2 3 9 7 8]        |         a: [2 3 9 7 8]
-     * 		           k: 0                  |   @return: []
+     *               a: [2 3 9 7 8]        |         a: [2 3 9 7 8]
+     *               k: 0                  |   @return: []
      * 
      *		      EX.3) Call a.prefix(5)     
      *              
      *                     BEFORE:         |       AFTER:
      *            -------------------------|-----------------------
-     * 		           a: [2 3 9 7 8]        |         a: []
-     * 		           k: 5                  |   @return: [2 3 9 7 8]
+     *               a: [2 3 9 7 8]        |         a: []
+     *               k: 5                  |   @return: [2 3 9 7 8]
      *
      *
      * REQUIREMENTS: THETA(n) worst case where n is the length of the given list
@@ -562,15 +562,15 @@ class List {
      *            
      *                     BEFORE:         |       AFTER:
      *            -------------------------|------------------------
-     * 		           a: [4 9 2 4 8 12 7 3] |         a: [9 8 12 7]
-     * 		           k: 4                  |   @return: [4 2 4 3]
+     *               a: [4 9 2 4 8 12 7 3] |         a: [9 8 12 7]
+     *               k: 4                  |   @return: [4 2 4 3]
      * 
      *          EX.2) Call a.filter_leq(6)
      *            
      *                     BEFORE:         |       AFTER:
      *            -------------------------|------------------------
-     * 		           a: [6 5 2 1]          |         a: []
-     * 		           k: 6                  |   @return: [6 5 2 1]
+     *               a: [6 5 2 1]          |         a: []
+     *               k: 6                  |   @return: [6 5 2 1]
      *
      * REQUIREMENTS: THETA(n) where n is the length of the given list
      *
@@ -631,8 +631,8 @@ class List {
      *            
      *               BEFORE:       |   AFTER:
      *            -----------------|--------------------- 
-     * 		           a: [2 9 1]    |   a: [2 9 1 5 1 2]
-     * 		           b: [5 1 2]    |   b: []
+     *               a: [2 9 1]    |   a: [2 9 1 5 1 2]
+     *               b: [5 1 2]    |   b: []
      *
      * REQUIREMENTS: The runtime should be O(1)
      */
