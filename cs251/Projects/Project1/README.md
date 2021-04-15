@@ -31,28 +31,28 @@ To finish the project, completion of all of the `TODO` items specified is requir
 
 | Function | Completion | Test Driver |
 | :---     |   :----:   |    :---:    |
-| `equal_to`        |   ✔️   |   [./TEST-CASES/t1_eq_to.cpp](./TEST-CASES/t1_eq_to.cpp)
-| `count`           |   ✔️   |   [./TEST-CASES/t2_count.cpp](./TEST-CASES/t2_count.cpp)
-| `length`          |   ✔️   |   [./TEST-CASES/t3_len.cpp](./TEST-CASES/t3_len.cpp)
-| `pop_back`        |   ✔️   |   [./TEST-CASES/t4_pop_back.cpp](./TEST-CASES/t4_pop_back.cpp)
-| `prefix`          |   ✔️   |   [./TEST-CASES/t5_prefix.cpp](./TEST-CASES/t5_prefix.cpp)
-| `filter_leq`      |   ✔️   |   [./TEST-CASES/t6_filter.cpp](./TEST-CASES/t6_filter.cpp)
-| `merge_with`      |   ✔️   |   [./TEST-CASES/t7_merge.cpp](./TEST-CASES/t7_merge.cpp)
-| `fast_remove_all` |   ✔️   |   [./TEST-CASES/t8_rem_all.cpp](./TEST-CASES/t8_rem_all.cpp)
-| `concat`          |   ✔️   |   [./TEST-CASES/t9_concat.cpp](./TEST-CASES/t9_concat.cpp)
-| `insert_sorted`   |   ✔️   |   [./TEST-CASES/t10_insert_sorted.cpp](./TEST-CASES/t10_insert_sorted.cpp)
-| `clone`           |   ✔️   |   [./TEST-CASES/t11_clone.cpp](./TEST-CASES/t11_clone.cpp)
+| `equal_to`        |   ✔️   |   [./tests/t1_eq_to.cpp](./tests/t1_eq_to.cpp)
+| `count`           |   ✔️   |   [./tests/t2_count.cpp](./tests/t2_count.cpp)
+| `length`          |   ✔️   |   [./tests/t3_len.cpp](./tests/t3_len.cpp)
+| `pop_back`        |   ✔️   |   [./tests/t4_pop_back.cpp](./tests/t4_pop_back.cpp)
+| `prefix`          |   ✔️   |   [./tests/t5_prefix.cpp](./tests/t5_prefix.cpp)
+| `filter_leq`      |   ✔️   |   [./tests/t6_filter.cpp](./tests/t6_filter.cpp)
+| `merge_with`      |   ✔️   |   [./tests/t7_merge.cpp](./tests/t7_merge.cpp)
+| `fast_remove_all` |   ✔️   |   [./tests/t8_rem_all.cpp](./tests/t8_rem_all.cpp)
+| `concat`          |   ✔️   |   [./tests/t9_concat.cpp](./tests/t9_concat.cpp)
+| `insert_sorted`   |   ✔️   |   [./tests/t10_insert_sorted.cpp](./tests/t10_insert_sorted.cpp)
+| `clone`           |   ✔️   |   [./tests/t11_clone.cpp](./tests/t11_clone.cpp)
 | `print_rev`       |   ✔️   |   - N/A - Checked by eye
-| `reverse`         |   ✔️   |   [./TEST-CASES/t12_reverse.cpp](./TEST-CASES/t12_reverse.cpp)
-| `compare_with`    |   ✔️   |   [./TEST-CASES/t13_compare.cpp](./TEST-CASES/t13_compare.cpp)
-| `suffix_maxes`    |   ✔️   |   [./TEST-CASES/t14_suff_maxes.cpp](./TEST-CASES/t14_suff_maxes.cpp)
+| `reverse`         |   ✔️   |   [./tests/t12_reverse.cpp](./tests/t12_reverse.cpp)
+| `compare_with`    |   ✔️   |   [./tests/t13_compare.cpp](./tests/t13_compare.cpp)
+| `suffix_maxes`    |   ✔️   |   [./tests/t14_suff_maxes.cpp](./tests/t14_suff_maxes.cpp)
 
 ## Project Structure
 
 This is to be developed in one stage, procedurally. There are several source files provided:
 
 - List.h => starter code provided for List implementation
-- [TEST CASES](./TEST_CASES/README.md) => This is the set of tests used to grade this List implmentation!
+- [TEST CASES](./tests/README.md) => This is the set of tests used to grade this List implmentation!
 
 ## Restrictions for this Project
 
@@ -71,4 +71,4 @@ This is to be developed in one stage, procedurally. There are several source fil
 
 ## My Solution in Action
 
-The Linked List deliverable is implmented in `List.h`; as indicated above, the [TEST CASES](./TEST_CASES) folder contains tests for the bulk of the functions it implements. The Linked List is of generic type, so it can store ints, strings, etc. To run the tests, head to the [TEST CASES](./TEST_CASES) folder and run the `make` command! Then, you can run any of the executables that generates (They will be labelled as indicated above in the table).
+The Linked List deliverable is implmented in `List.h`; as indicated above, the [TEST CASES](./tests) folder contains tests for the bulk of the functions it implements. The Linked List is of generic type, so it can store ints, strings, etc. To run the tests, head to the [TEST CASES](./tests) folder and run the `make` command! Then, you can run any of the executables that generates (They will be labelled as indicated above in the table).
