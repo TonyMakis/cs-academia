@@ -8,23 +8,23 @@ There are several auto-scoring tester programs in this batch. The source files a
 
 >The tests are very strict, and if the function runs even a millisecond over the requirement it will fail. If you can run the test again and it passes, this is fine. If the time is way off however, the implementation needs work!!!
 
-| Function | Completion | Test Driver |
-| :---     |   :----:   |    :---:    |
-| `equal_to`        |   ✔️   |   [./t1_eq_to.cpp](./t1_eq_to.cpp)
-| `count`           |   ✔️   |   [./t2_count.cpp](./t2_count.cpp)
-| `length`          |   ✔️   |   [./t3_len.cpp](./t3_len.cpp)
-| `pop_back`        |   ✔️   |   [./t4_pop_back.cpp](./t4_pop_back.cpp)
-| `prefix`          |   ✔️   |   [./t5_prefix.cpp](./t5_prefix.cpp)
-| `filter_leq`      |   ✔️   |   [./t6_filter.cpp](./t6_filter.cpp)
-| `merge_with`      |   ✔️   |   [./t7_merge.cpp](./t7_merge.cpp)
-| `fast_remove_all` |   ✔️   |   [./t8_rem_all.cpp](./t8_rem_all.cpp)
-| `concat`          |   ✔️   |   [./t9_concat.cpp](./t9_concat.cpp)
-| `insert_sorted`   |   ✔️   |   [./t10_insert_sorted.cpp](./t10_insert_sorted.cpp)
-| `clone`           |   ✔️   |   [./t11_clone.cpp](./t11_clone.cpp)
-| `print_rev`       |   ✔️   |   - N/A - Checked by eye
-| `reverse`         |   ✔️   |   [./t12_reverse.cpp](./t12_reverse.cpp)
-| `compare_with`    |   ✔️   |   [./t13_compare.cpp](./t13_compare.cpp)
-| `suffix_maxes`    |   ✔️   |   [./t14_suff_maxes.cpp](./t14_suff_maxes.cpp)
+| Function | Completion | Test Driver | My Test Runs' Results
+| :---     |   :----:   |    :---:    |   :---:   |
+| `equal_to`        |   ✔️   |   [./t1_eq_to.cpp](./t1_eq_to.cpp)   |   [./img/t1.png](./img/t1.png)   |
+| `count`           |   ✔️   |   [./t2_count.cpp](./t2_count.cpp)   |   [./img/t2.png](./img/t2.png)   |
+| `length`          |   ✔️   |   [./t3_len.cpp](./t3_len.cpp)   |   [./img/t3.png](./img/t3.png)   |
+| `pop_back`        |   ✔️   |   [./t4_pop_back.cpp](./t4_pop_back.cpp)   |   [./img/t4.png](./img/t4.png)   |
+| `prefix`          |   ✔️   |   [./t5_prefix.cpp](./t5_prefix.cpp)   |   [./img/t5.png](./img/t5.png)   |
+| `filter_leq`      |   ✔️   |   [./t6_filter.cpp](./t6_filter.cpp)   |   [./img/t6.png](./img/t6.png)   |
+| `merge_with`      |   ✔️   |   [./t7_merge.cpp](./t7_merge.cpp)   |   [./img/t7.png](./img/t7.png)   |
+| `fast_remove_all` |   ✔️   |   [./t8_rem_all.cpp](./t8_rem_all.cpp)   |   [./img/t8.png](./img/t8.png)   |
+| `concat`          |   ✔️   |   [./t9_concat.cpp](./t9_concat.cpp)   |   [./img/t9.png](./img/t9.png)   |
+| `insert_sorted`   |   ✔️   |   [./t10_insert_sorted.cpp](./t10_insert_sorted.cpp)   |   [./img/t10.png](./img/t10.png)   |
+| `clone`           |   ✔️   |   [./t11_clone.cpp](./t11_clone.cpp)   |   [./img/t11.png](./img/t11.png)   |
+| `print_rev`       |   ✔️   |   - N/A - Checked by eye   |   - N/A -   |
+| `reverse`         |   ✔️   |   [./t12_reverse.cpp](./t12_reverse.cpp)   |   [./img/t12.png](./img/t12.png)   |
+| `compare_with`    |   ✔️   |   [./t13_compare.cpp](./t13_compare.cpp)   |   [./img/t13.png](./img/t13.png)   |
+| `suffix_maxes`    |   ✔️   |   [./t14_suff_maxes.cpp](./t14_suff_maxes.cpp)   |   [./img/t14.png](./img/t14.png)   |
 
 To compile the test programs you can simply type `make` from the shell.
 
