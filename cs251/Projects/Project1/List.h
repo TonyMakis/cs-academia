@@ -723,7 +723,7 @@ class List {
      *            
      *                        BEFORE:             |               AFTER:
      *            --------------------------------|-------------------------------
-     * 		           a: [6 -18 12 4 1 7 2 5 4]    |      a: [6 -18 12 4 1 7 2 5 4]
+     *               a: [6 -18 12 4 1 7 2 5 4]    |      a: [6 -18 12 4 1 7 2 5 4]
      *                                            |   @ret: [12 12 12 7 7 7 5 5 4]
      *
      *              (as a sub-example, the marked entry in the new list (marked with '^') is the max 
