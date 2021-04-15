@@ -51,8 +51,8 @@ To finish the project, completion of all of the `TODO` items specified is requir
 
 This is to be developed in one stage, procedurally. There are several source files provided:
 
-- List.h => starter code provided for List implementation
-- [TEST CASES](./tests/README.md) => This is the set of tests used to grade this List implmentation!
+- [List.h](./List.h) => starter code provided for List implementation
+- [tests](./tests/README.md) => This is the set of tests used to grade this List implmentation!
 
 ## Restrictions for this Project
 
